@@ -1,6 +1,9 @@
 let transactions = JSON.parse(localStorage.getItem('transactions') || '[]');
 let budget = parseFloat(localStorage.getItem('budget') || '0');
 
+// CI/CD Test - Debug log
+console.log('Finance Dashboard loaded - CI/CD Pipeline Test!');
+
 // Tab switching
 document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', () => {
